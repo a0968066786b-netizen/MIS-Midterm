@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未來規劃</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8f9fa; }
+        .main-section { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #ccc; padding: 2rem; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+{% include 'navbar.html' %}
+<div class="container">
+    <div class="main-section">
+        <h1 class="text-center">未來規劃</h1>
+        <hr>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-primary">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="me-2" style="font-size:2rem;color:#0d6efd;"><svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' fill='currentColor' class='bi bi-mortarboard' viewBox='0 0 16 16'><path d='M8 0a.5.5 0 0 1 .496.438l6.5 1.625a.5.5 0 0 1 0 .974l-6.5 1.625A.5.5 0 0 1 8 4.5v7.5a.5.5 0 0 1-1 0V4.5a.5.5 0 0 1 .496-.438l6.5-1.625A.5.5 0 0 1 8 0z'/></svg></span>
+                            <h5 class="card-title mb-0">課程／證照</h5>
+                        </div>
+                        <ul class="mb-0">
+                            <li>Python、機器學習、AI 課程（後兩者優先）</li>
+                            <li>相關證照（以 AI、機器學習為主）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-success">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="me-2" style="font-size:2rem;color:#198754;"><svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' fill='currentColor' class='bi bi-people' viewBox='0 0 16 16'><path d='M13 7a2 2 0 1 0-4 0 2 2 0 0 0 4 0zm-2 3c-2.33 0-7 1.17-7 3.5V15h14v-1.5C15 11.17 10.33 10 8 10z'/></svg></span>
+                            <h5 class="card-title mb-0">活動／社團</h5>
+                        </div>
+                        <ul class="mb-0">
+                            <li>畢業專題（企畫書、專案實作）</li>
+                            <li>參加 AI 相關比賽、學術或企業專案</li>
+                            <li>嘗試 AI 部屬與專案管理</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-warning">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="me-2" style="font-size:2rem;color:#ffc107;"><svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' fill='currentColor' class='bi bi-lightbulb' viewBox='0 0 16 16'><path d='M2 6a6 6 0 1 1 12 0c0 2.577-1.5 4.5-3 5.5V13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-1.5C3.5 10.5 2 8.577 2 6zm6-5a5 5 0 0 0-5 5c0 2.21 1.343 4.005 2.5 4.905V13a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2.095C12.657 10.005 14 8.21 14 6a5 5 0 0 0-5-5z'/></svg></span>
+                            <h5 class="card-title mb-0">自我充實</h5>
+                        </div>
+                        <ul class="mb-0">
+                            <li>尋找實習機會，貼合領域與公司</li>
+                            <li>累積實務經驗，提升專業能力</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

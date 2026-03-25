@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIS職涯與自傳履歷</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body { background: #f8f9fa; }
-        .main-section { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #ccc; padding: 2rem; margin-top: 2rem; }
-        .section-title { color: #2c3e50; margin-top: 2rem; }
-    </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>首頁 - 劉振銘個人網頁</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+                body { background: #f8f9fa; }
+                .main-section { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #ccc; padding: 2rem; margin-top: 2rem; }
+                .nav-link { font-weight: bold; }
+        </style>
 </head>
 <body>
-<div class="container">
-    <div class="main-section">
-        <h1 class="text-center">MIS職涯探索與自傳履歷</h1>
-        <hr>
-        <h2 class="section-title">一、職涯測驗結果</h2>
-        <p>根據104人力銀行興趣測驗，我的興趣類型為「調查型（I）」與「企業型（E）」，適合從事資訊管理、系統分析等相關職務。</p>
-        <h2 class="section-title">二、目標工作說明</h2>
-        <ul>
-            <li><strong>公司：</strong>台灣積體電路製造股份有限公司（TSMC）</li>
-            <li><strong>職務：</strong>資訊系統分析師</li>
-            <li><strong>工作內容：</strong>負責企業內部資訊系統的需求分析、設計與優化，協助跨部門溝通，提升資訊流程效率。</li>
-            <li><strong>需求條件：</strong>具備MIS、資訊管理、系統分析等相關知識，良好溝通能力，具備團隊合作精神。</li>
-        </ul>
-        <h2 class="section-title">三、自傳履歷</h2>
-        <p>我熱愛資訊科技，具備良好的邏輯思維與學習能力。在大學期間修習多門MIS相關課程，並參與資訊專題競賽，培養了解決問題的能力。未來希望能在台積電擔任資訊系統分析師，發揮所長，協助企業數位轉型。</p>
-        <h2 class="section-title">四、未來充實規劃</h2>
-        <ul>
-            <li>持續修習進階MIS、資料庫、程式設計等課程</li>
-            <li>參加校內外資訊相關研習與社團</li>
-            <li>考取相關證照（如TQC、MOS等）</li>
-            <li>積極參與實習與專題製作，累積實務經驗</li>
-        </ul>
-        <hr>
-        <div class="text-center">
-            <small>本網頁為課堂作業範例，部署於Vercel平台</small>
+    <!-- 左上角深色橫條，含導覽列 -->
+    <div style="background-color: #18506a; color: #fff; padding: 8px 24px; font-size: 1.2rem; position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+        <a href="/" style="color: #fff; text-decoration: none; margin-right: 24px; font-weight: bold;">首頁</a>
+        <a href="/about" style="color: #fff; text-decoration: none; margin-right: 24px;">自我介紹</a>
+        <a href="/direction" style="color: #fff; text-decoration: none; margin-right: 24px;">職涯方向</a>
+        <a href="/plan" style="color: #fff; text-decoration: none;">未來規劃</a>
+    </div>
+    <!-- 中間姓名 -->
+    <div style="margin-top: 100px; text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 60px;">劉振銘</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-4">
+                    <a href="/about" style="text-decoration: none;">
+                        <div style="background-color: #18506a; color: #fff; height: 120px; display: flex; align-items: center; justify-content: center; font-size: 2rem; border-radius: 8px; box-shadow: 0 2px 8px #bbb; transition: background 0.2s; border: none;">
+                            自我介紹
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <a href="/direction" style="text-decoration: none;">
+                        <div style="background-color: #18506a; color: #fff; height: 120px; display: flex; align-items: center; justify-content: center; font-size: 2rem; border-radius: 8px; box-shadow: 0 2px 8px #bbb; transition: background 0.2s; border: none;">
+                            職涯方向
+                        </div>
+                    </a>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-5 mb-4">
+                    <a href="/plan" style="text-decoration: none;">
+                        <div style="background-color: #18506a; color: #fff; height: 120px; display: flex; align-items: center; justify-content: center; font-size: 2rem; border-radius: 8px; box-shadow: 0 2px 8px #bbb; transition: background 0.2s; border: none;">
+                            未來規劃
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <a href="/" style="text-decoration: none;">
+                        <div style="background-color: #18506a; color: #fff; height: 120px; display: flex; align-items: center; justify-content: center; font-size: 2rem; border-radius: 8px; box-shadow: 0 2px 8px #bbb; transition: background 0.2s; border: none;">
+                            首頁
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
