@@ -1,0 +1,2 @@
+# 自動偵測文字檔，並在存入 Git 倉庫時統一轉為 LF
+* text=auto eol=lf

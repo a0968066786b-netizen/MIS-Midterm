@@ -1,54 +1,74 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>首頁 - 劉振銘個人網頁</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-                body { background: #f8f9fa; }
-                .main-section { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #ccc; padding: 2rem; margin-top: 2rem; }
-                .nav-link { font-weight: bold; }
-        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁 - 劉振銘個人網頁</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <style>
+.home-btn {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.3);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #232946;
+    text-shadow: 0 2px 8px rgba(255,255,255,0.18);
+    transition: opacity 0.2s, transform 0.2s;
+    background-clip: padding-box;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(255,255,255,0.85) !important;
+}
+.home-btn1 { background: rgba(141,170,145,0.85) !important; }
+.home-btn2 { background: rgba(112,146,171,0.85) !important; }
+.home-btn3 { background: rgba(172,142,130,0.85) !important; }
+.home-btn4 { background: rgba(212,180,131,0.85) !important; }
+.home-btn:hover, .home-btn:focus {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+    </style>
 </head>
 <body>
-    <!-- 左上角深色橫條，含導覽列 -->
-    <div style="background-color: #18506a; color: #fff; padding: 8px 24px; font-size: 1.2rem; position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
-        <a href="/" style="color: #fff; text-decoration: none; margin-right: 24px; font-weight: bold;">首頁</a>
-        <a href="/about" style="color: #fff; text-decoration: none; margin-right: 24px;">自我介紹</a>
-        <a href="/direction" style="color: #fff; text-decoration: none; margin-right: 24px;">職涯方向</a>
-        <a href="/plan" style="color: #fff; text-decoration: none;">未來規劃</a>
-    </div>
+    <div class="aurora aurora-blue"></div>
+    <div class="aurora aurora-purple"></div>
+    <div class="bg-glass-noise"></div>
+    {% include 'navbar.html' %}
     <!-- 中間姓名 -->
     <div style="margin-top: 100px; text-align: center;">
-        <h2 style="font-size: 2.5rem; margin-bottom: 60px;">劉振銘</h2>
-        <div class="container">
-            <div class="row justify-content-center">
+            <h2 style="font-size: 2.5rem; margin-bottom: 60px; color: #fff; text-shadow: 0 4px 24px rgba(0,0,0,0.45), 0 1px 0 #232946; letter-spacing: 2px;">劉振銘</h2>        <div class="container">
+            <div class="row justify-content-center" style="position: relative; z-index: 1;">
                 <div class="col-md-5 mb-4">
                     <a href="/about" style="text-decoration: none;">
-                        <div style="background-color: #18506a; color: #fff; height: 120px; display: flex; align-items: center; justify-content: center; font-size: 2rem; border-radius: 8px; box-shadow: 0 2px 8px #bbb; transition: background 0.2s; border: none;">
+                        <div class="home-btn home-btn1">
                             自我介紹
                         </div>
                     </a>
                 </div>
                 <div class="col-md-5 mb-4">
                     <a href="/direction" style="text-decoration: none;">
-                        <div style="background-color: #18506a; color: #fff; height: 120px; display: flex; align-items: center; justify-content: center; font-size: 2rem; border-radius: 8px; box-shadow: 0 2px 8px #bbb; transition: background 0.2s; border: none;">
+                        <div class="home-btn home-btn2">
                             職涯方向
                         </div>
                     </a>
                 </div>
-                <div class="w-100"></div>
                 <div class="col-md-5 mb-4">
                     <a href="/plan" style="text-decoration: none;">
-                        <div style="background-color: #18506a; color: #fff; height: 120px; display: flex; align-items: center; justify-content: center; font-size: 2rem; border-radius: 8px; box-shadow: 0 2px 8px #bbb; transition: background 0.2s; border: none;">
+                        <div class="home-btn home-btn3">
                             未來規劃
                         </div>
                     </a>
                 </div>
                 <div class="col-md-5 mb-4">
                     <a href="/" style="text-decoration: none;">
-                        <div style="background-color: #18506a; color: #fff; height: 120px; display: flex; align-items: center; justify-content: center; font-size: 2rem; border-radius: 8px; box-shadow: 0 2px 8px #bbb; transition: background 0.2s; border: none;">
+                        <div class="home-btn home-btn4">
                             首頁
                         </div>
                     </a>

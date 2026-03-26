@@ -5,104 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>職涯方向</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body { background: #f8f9fa; }
-        .main-section { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #ccc; padding: 2rem; margin-top: 2rem; }
-    </style>
+    <link href="/static/css/style.css" rel="stylesheet">
 </head>
 <body>
-{% include 'navbar.html' %}
-<div class="container">
-    <div class="main-section">
-        <h1 class="text-center">職涯方向</h1>
-        <hr>
-        <div class="timeline-horizontal d-flex justify-content-between align-items-center position-relative" style="margin: 3rem 0 3rem 0;">
-            <div class="timeline-node text-center position-relative">
-                <div class="timeline-dot bg-primary mx-auto timeline-hover" data-content-id="short-term"></div>
-                <div class="timeline-label mt-2">短期</div>
-                <div class="timeline-popup" id="short-term">
-                    <strong>短期規劃（1年內）</strong><br>
-                    <ul class="mb-0">
-                        <li>學習 AI/機器學習基礎知識</li>
-                        <li>完成 Python 進階課程</li>
-                        <li>參加校內/線上 AI 相關活動</li>
-                    </ul>
+    <div class="aurora aurora-blue"></div>
+    <div class="aurora aurora-purple"></div>
+    <div class="bg-glass-noise"></div>
+    {% include 'navbar.html' %}
+    <div class="container">
+        <div class="main-section">
+            <h1 class="text-center">職涯方向</h1>
+            <hr>
+            <div class="timeline-horizontal d-flex justify-content-between align-items-center position-relative" style="margin: 3rem 0 3rem 0;">
+                <div class="timeline-node text-center position-relative">
+                    <div class="timeline-dot bg-primary mx-auto timeline-hover" data-content-id="short-term"></div>
+                    <div class="timeline-label mt-2">短期</div>
+                    <div class="timeline-popup" id="short-term">
+                        <strong>短期規劃（1年內）</strong><br>
+                        <ul class="mb-0">
+                            <li>學習 AI/機器學習基礎知識</li>
+                            <li>完成 Python 進階課程</li>
+                            <li>參加校內/線上 AI 相關活動</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-line flex-grow-1 mx-2"></div>
+                <div class="timeline-node text-center position-relative">
+                    <div class="timeline-dot bg-success mx-auto timeline-hover" data-content-id="mid-term"></div>
+                    <div class="timeline-label mt-2">中期</div>
+                    <div class="timeline-popup" id="mid-term">
+                        <strong>中期規劃（2-3年）</strong><br>
+                        <ul class="mb-0">
+                            <li>參加 AI/資料科學競賽</li>
+                            <li>完成相關證照（如：AI、機器學習）</li>
+                            <li>嘗試實習，累積專案經驗</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-line flex-grow-1 mx-2"></div>
+                <div class="timeline-node text-center position-relative">
+                    <div class="timeline-dot bg-warning mx-auto timeline-hover" data-content-id="long-term"></div>
+                    <div class="timeline-label mt-2">長期</div>
+                    <div class="timeline-popup" id="long-term">
+                        <strong>長期規劃（3年以上）</strong><br>
+                        <ul class="mb-0">
+                            <li>成為 AI/機器學習工程師</li>
+                            <li>參與大型專案或企業研發</li>
+                            <li>持續學習新技術，提升專業能力</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-line flex-grow-1 mx-2"></div>
-            <div class="timeline-node text-center position-relative">
-                <div class="timeline-dot bg-success mx-auto timeline-hover" data-content-id="mid-term"></div>
-                <div class="timeline-label mt-2">中期</div>
-                <div class="timeline-popup" id="mid-term">
-                    <strong>中期規劃（2-3年）</strong><br>
-                    <ul class="mb-0">
-                        <li>參加 AI/資料科學競賽</li>
-                        <li>完成相關證照（如：AI、機器學習）</li>
-                        <li>嘗試實習，累積專案經驗</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-line flex-grow-1 mx-2"></div>
-            <div class="timeline-node text-center position-relative">
-                <div class="timeline-dot bg-warning mx-auto timeline-hover" data-content-id="long-term"></div>
-                <div class="timeline-label mt-2">長期</div>
-                <div class="timeline-popup" id="long-term">
-                    <strong>長期規劃（3年以上）</strong><br>
-                    <ul class="mb-0">
-                        <li>成為 AI/機器學習工程師</li>
-                        <li>參與大型專案或企業研發</li>
-                        <li>持續學習新技術，提升專業能力</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <style>
-            .timeline-horizontal {
-                min-height: 120px;
-            }
-            .timeline-node {
-                min-width: 100px;
-                z-index: 2;
-            }
-            .timeline-dot {
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                border: 4px solid #fff;
-                box-shadow: 0 0 0 2px #dee2e6;
-                cursor: pointer;
-                transition: box-shadow 0.2s;
-            }
-            .timeline-dot:hover {
-                box-shadow: 0 0 0 4px #b6d4fe;
-            }
-            .timeline-line {
-                height: 4px;
-                background: #dee2e6;
-                z-index: 1;
-            }
-            .timeline-label {
-                font-weight: 500;
-            }
-            .timeline-popup {
-                display: none;
-                position: absolute;
-                left: 50%;
-                top: 60px;
-                transform: translateX(-50%);
-                min-width: 400px;
-                max-width: 600px;
-                background: #fff;
-                border: 1px solid #dee2e6;
-                border-radius: 8px;
-                box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-                padding: 1rem;
-                z-index: 10;
-                text-align: left;
-                font-size: 1rem;
-                word-break: break-word;
-            }
-        </style>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const dots = document.querySelectorAll('.timeline-hover');
