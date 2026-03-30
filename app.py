@@ -1,6 +1,10 @@
+import os
 from flask import Flask, render_template
 
-app = Flask(__name__)
+# 加上 os.path 確保 Vercel 能在伺服器上精確定位資料夾
+app = Flask(__name__, 
+            static_folder=os.path.join(os.getcwd(), 'static'),
+            template_folder=os.path.join(os.getcwd(), 'templates'))
 
 @app.route('/')
 def index():
